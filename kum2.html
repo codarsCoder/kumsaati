@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      body{
+    padding: 0px;
+    margin:0px;
+    background-color: #848065;
+    height:100vh;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: #fcdc29;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 50px;
+    color:#ff6f61;
+}
+
+
+.hourglass{
+    width: 100px;
+    height: 50px;
+}
+.hourglass:before{
+    content: '\f251';
+    animation: iconAnimation2 3s infinite;
+    display: block;
+}
+@keyframes iconAnimation2{
+    0%{
+        content: '\f251';
+        transform: rotate(0deg);
+    }
+    25%{
+        content: '\f252';
+        transform: rotate(0deg);
+    }
+    75%{
+        content: '\f253';
+        transform: rotate(0deg);
+    }
+    100%{
+        content: '\f253';
+        transform: rotate(180deg);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hourglass icon"></div>
+    </div> 
+</body>
+</html>
